@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch with Timer</title>
+    <link rel="stylesheet" href="watch.css">
+</head>
+<body>
+    <div id="watch">
+        <div class="time" id="time">00:00:00</div>
+        <div class="controls">
+            <button id="startTimer">Start Timer</button>
+            <button id="stopTimer">Stop Timer</button>
+            <button id="resetTimer">Reset Timer</button>
+            <button id="startStopwatch">Start Stopwatch</button>
+            <button id="stopStopwatch">Stop Stopwatch</button>
+            <button id="resetStopwatch">Reset Stopwatch</button>
+        </div>
+    </div>
+    <div class="watch">
+        <div class="clock">
+            <div class="hand hour-hand"></div>
+            <div class="hand minute-hand"></div>
+            <div class="hand second-hand"></div>
+            <div class="center-dot"></div>
+        </div>
+        <button onclick="updateClock()">Start</button>
+    </div>
+    <script src="watch.js"></script>
+</body>
+</html>
